@@ -23,6 +23,9 @@ import hashlib  # Added for MD5 hashing
 def convert_md_to_html(input_file, output_file):
     '''
     Converts markdown file to HTML file with advanced features.
+
+    :param input_file: The path to the Markdown file.
+    :param output_file: The path to the HTML output file.
     '''
     try:
         # Read the contents of the input file
@@ -47,7 +50,7 @@ def convert_md_to_html(input_file, output_file):
             match = re.match(r'(#){1,6} (.*)', line)
             if match:
                 # Get the level of the heading
-                h_level = len(match.group(1)
+                h_level = len(match.group(1))
                 # Get the content of the heading and HTML escape it
                 h_content = html.escape(match.group(2))
                 # Append the HTML equivalent of the heading
