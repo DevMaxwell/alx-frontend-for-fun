@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """
-Script to convert a Markdown file to HTML.
+This is a script to convert a Markdown file to HTML with advanced features.
+
+Usage:
+    ./markdown2html.py [input_file] [output_file]
 
 Arguments:
     input_file: the name of the Markdown file to be converted
